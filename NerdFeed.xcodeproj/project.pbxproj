@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A720129B1D511F9D00D21A3C /* KRNWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A720129A1D511F9D00D21A3C /* KRNWebViewController.m */; };
 		A749DC7D1D4BAF8700321A55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A749DC7C1D4BAF8700321A55 /* main.m */; };
 		A749DC801D4BAF8700321A55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A749DC7F1D4BAF8700321A55 /* AppDelegate.m */; };
 		A749DC831D4BAF8700321A55 /* KRNCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A749DC821D4BAF8700321A55 /* KRNCoursesViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A72012991D511F9D00D21A3C /* KRNWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRNWebViewController.h; sourceTree = "<group>"; };
+		A720129A1D511F9D00D21A3C /* KRNWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRNWebViewController.m; sourceTree = "<group>"; };
 		A749DC781D4BAF8700321A55 /* NerdFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NerdFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A749DC7C1D4BAF8700321A55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A749DC7E1D4BAF8700321A55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 				A749DC7F1D4BAF8700321A55 /* AppDelegate.m */,
 				A749DC811D4BAF8700321A55 /* KRNCoursesViewController.h */,
 				A749DC821D4BAF8700321A55 /* KRNCoursesViewController.m */,
+				A72012991D511F9D00D21A3C /* KRNWebViewController.h */,
+				A720129A1D511F9D00D21A3C /* KRNWebViewController.m */,
 				A749DC841D4BAF8700321A55 /* Main.storyboard */,
 				A749DC871D4BAF8700321A55 /* Assets.xcassets */,
 				A749DC891D4BAF8700321A55 /* LaunchScreen.storyboard */,
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A749DC831D4BAF8700321A55 /* KRNCoursesViewController.m in Sources */,
+				A720129B1D511F9D00D21A3C /* KRNWebViewController.m in Sources */,
 				A749DC801D4BAF8700321A55 /* AppDelegate.m in Sources */,
 				A749DC7D1D4BAF8700321A55 /* main.m in Sources */,
 			);

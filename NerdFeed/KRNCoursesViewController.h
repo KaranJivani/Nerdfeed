@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KRNWebViewController.h"
+
+@class KRNWebViewController;
 
 @interface KRNCoursesViewController : UITableViewController
 
+@property(nonatomic) KRNWebViewController *webViewController;
 
 @end
 

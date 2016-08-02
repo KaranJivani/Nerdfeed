@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "KRNCoursesViewController.h"
+#import "KRNWebViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +23,9 @@
     KRNCoursesViewController *cvc = [[KRNCoursesViewController alloc]initWithStyle:UITableViewStylePlain];
     
     UINavigationController *masterNav = [[UINavigationController alloc] initWithRootViewController:cvc];
+    
+    KRNWebViewController *wvc = [[KRNWebViewController alloc]init];
+    cvc.webViewController = wvc;
     
     self.window.rootViewController = masterNav;
     
