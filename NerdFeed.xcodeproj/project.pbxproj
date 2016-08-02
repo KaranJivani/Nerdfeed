@@ -302,6 +302,7 @@
 				A749DC911D4BAF8700321A55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
