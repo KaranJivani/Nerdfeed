@@ -86,7 +86,10 @@
     NSURL *URL = [NSURL URLWithString:[course valueForKey:@"url"]];
     self.webViewController.title = [course valueForKey:@"title"];
     self.webViewController.URL = URL;
-    [self.navigationController pushViewController:self.webViewController animated:YES];
+    
+    if (!self.splitViewController) {
+        [self.navigationController pushViewController:self.webViewController animated:YES];
+    }
                   
 }
 

@@ -27,8 +27,23 @@
     KRNWebViewController *wvc = [[KRNWebViewController alloc]init];
     cvc.webViewController = wvc;
     
-    self.window.rootViewController = masterNav;
+    //Check to make sure we are running on ipad
+    if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+        UINavigationController *detailNav = [[UINavigationController alloc]initWithRootViewController:wvc];
+        UISplitViewController *svc = [[UISplitViewController alloc]init];
     
+        //set the delegate of the split view controller to the detail VC
+        svc.delegate = wvc;
+        svc.viewControllers = @[masterNav,detailNav];
+        
+        //Set the root view controller of the window to the split view controller
+        self.window.rootViewController = svc;
+        
+    }
+    else {
+        //On non iPad device just use the navigation controller
+        self.window.rootViewController = masterNav;
+    }
     return YES;
 }
 
